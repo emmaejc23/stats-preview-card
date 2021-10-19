@@ -1,0 +1,186 @@
+/************RESET CSS**************************/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/*****************************************************/
+body {
+  background-color: #0A0C1C;
+  color: #ffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.container-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+  background-color: #1b1937;
+  margin: 10vh auto 5vh auto;
+  border-radius: 15px;
+}
+
+.container-main .img {
+  background: url("assets/image-header-mobile.jpg") rgba(171, 92, 219, 0.75);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 240px;
+  border-radius: 15px 15px 0 0;
+}
+
+.container-main .info {
+  width: 80%;
+  margin: 10% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-main .info h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  width: 80%;
+}
+
+.container-main .info h1 span {
+  color: #ab5cdb;
+}
+
+.container-main .info p {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 10%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.container-main .info .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20%;
+}
+
+.container-main .info .stats .stat {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.container-main .info .stats .stat .stat-no {
+  font-weight: bold;
+}
+
+.container-main .info .stats .stat .stat-title {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+/***********Media Queries******************/
+@media (min-width: 1280px) {
+  .container-main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 40vh auto;
+  }
+  .container-main .img {
+    background: url("assets/image-header-desktop.jpg") rgba(171, 92, 219, 0.75);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    min-height: 500px;
+    border-radius: 0 15px 15px 0;
+  }
+  .container-main .info {
+    width: 100%;
+    margin: 8% 5% 5% 5%;
+  }
+  .container-main .info h1 {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    text-align: left;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .container-main .info p {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    text-align: left;
+    margin-top: 5%;
+    max-width: 80%;
+  }
+  .container-main .info .stats {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 70%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 15%;
+  }
+  .container-main .info .stats .stat {
+    margin-bottom: 5%;
+  }
+  .container-main .info .stats .stat .stat-no {
+    font-size: 24px;
+  }
+  .container-main .info .stats .stat .stat-title {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
